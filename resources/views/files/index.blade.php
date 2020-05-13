@@ -11,7 +11,7 @@
    
    @foreach($files as $file)
       <ul>
-      <li><a href="{{ route('files.index')}}" download><img src="{{ URL::to('/') }}/uploads/{{ $file->file }}" class="img-thumbnail" width="75" /></a></li>
+      <li><a href="{{URL::to('/') }}/uploads/{{ $file->file }}" download>File</a></li>
       </ul>
    @endforeach
 </div>
